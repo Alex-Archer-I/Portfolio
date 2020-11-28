@@ -1,0 +1,97 @@
+.review
+    min-height: 941px
+    position: relative
+    &_box
+        width: 50%
+        position: absolute
+        left: 50%
+    &_title
+        width: 477px
+        margin-bottom: 43px
+        .title
+            margin-bottom: 28px
+    &_main
+        width: 593px
+    &_stars
+        display: flex
+        margin-bottom: 29px
+        .icon-star-full
+            margin: 0 5px
+            font-size: 20px
+            color: #ffcc00
+    &_text
+        height: 130px
+        overflow: auto
+    &_flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 60px
+    &_info
+        display: flex
+        align-items: center
+        font-size: 18px
+    &_foto
+        width: 90px
+        height: 90px
+        display: none
+        &_active
+            display: block
+    &_name
+        transform: translateX(30px)
+    &_arrows
+        display: flex
+    &_arrow
+        width: 50px
+        height: 50px
+        border: 2px solid #eff3f8
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.5s all
+        color: #eff3f8
+        font-size: 20px
+        &:hover
+            background-color: #eff3f8
+            color: #2500f9
+    &_line
+        width: 1px
+        height: 25px
+        background-color: #e7e7e7
+        margin: 12px 7px
+    &_map
+        position: absolute
+        top: 234px
+        left: 150px
+    &_ava
+        position: absolute
+        transition: 0.5s all
+        &:hover
+            transform: scale(1.2)
+        &_active
+            transform: scale(1.2)
+    .one
+        top: -15px
+        left: 261px
+    .two
+        top: 31px
+        right: 154px
+    .three
+        top: 90px
+        left: 41px
+    .four
+        top: 174px
+        left: 288px
+    .five
+        bottom: 174px
+        left: 65px
+    .six
+        bottom: 160px
+        right: 256px
+    .seven
+        bottom: 0
+        left: 234px
+    .eight
+        top: 50px
+        right: 305px

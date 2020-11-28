@@ -1,0 +1,53 @@
+.header
+    min-height: 700px
+    background: url('../img/Head_bg.jpg') center (center/cover) no-repeat
+    .flexbox
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 33px
+    &_logo
+        width: 174px
+        height: 27px
+        margin-left: 10px
+    nav
+        ul
+            display: flex
+            list-style: none
+        a
+            text-decoration: none
+            line-height: 34px
+            transition: 0.5s all
+            padding: 10px
+            &:hover
+                color: #ffffff
+                background-color: $main-color
+    .social_icons
+        display: flex
+        &_round
+            width: 36px
+            height: 36px
+            background-color: #000000
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 5px
+            transition: 0.5s all
+            &:hover
+                background-color: $main-color
+    h1
+        color: #000000
+        font-family: Playfair Display, serif
+        font-size: 50px
+        text-align: center
+        margin-top: 146px
+        font-weight: 400
+    h2
+        text-shadow: 0 3px 15px rgba(0, 0, 0, 0.64)
+        color: #ffffff
+        font-family: Playfair Display, serif
+        font-size: 24px
+        text-align: center
+        font-weight: 400
+        margin-top: 10px

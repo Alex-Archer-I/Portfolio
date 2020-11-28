@@ -1,0 +1,30 @@
+.features
+    min-height: 900px
+    &_img
+        position: relative
+        width: 700px
+        height: 900px
+        background-image: url(../img/Animation/Figures.png)
+        background-repeat: no-repeat
+        background-position: center
+        .phone_one
+            position: absolute
+            animation: shineReverce 15s infinite
+        .phone_two
+            position: absolute
+            left: 50px
+            opacity: 0
+            animation: shine 15s infinite
+            transform: rotate(10deg)
+    &_wrapper
+        display: flex
+        justify-content: space-between
+    &_main
+        width: 428px
+    &_item
+        display: flex
+        align-items: center
+        margin-top: 62px
+    &_textblock
+        width: 259px
+        margin-left: 32px

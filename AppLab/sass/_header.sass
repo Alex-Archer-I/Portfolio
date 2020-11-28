@@ -1,0 +1,99 @@
+.header
+    height: 950px
+    width: 100%
+    &_menu
+        display: flex
+        align-items: center
+        padding-top: 50px
+        .nav_big
+            ul
+                width: 461px
+                display: flex
+                justify-content: space-between
+                li
+                list-style-type: none
+                font-family: Poppins
+                font-weight: 400
+                font-size: 16px
+                a
+                    text-decoration: none
+                    color: #242f51
+                    transition: 0.5s all
+                    &:hover
+                        color: #fcae61
+    &_logo
+        margin-right: 366px
+    &_main
+        display: flex
+        justify-content: center
+        align-items: center
+    &_title
+        width: 516px
+        height: 367px
+        margin-right: 127px
+        h1
+            margin: 24px 0 26px 0
+        &_choise
+            display: flex
+            align-items: center
+            width: 362px
+            height: 35px
+            border-radius: 18px
+            background-color: #e2eaed
+            &_check
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 39px
+                height: 35px
+                border-radius: 18px
+                background-color: #feaa25
+                margin-right: 9px
+            &_text
+                color: #242f51
+                font-family: Poppins
+                font-size: 18px
+                font-weight: 400
+        &_link
+            margin-left: 27px
+            text-decoration: none
+            color: #2500f9
+            font-family: Poppins
+            font-size: 16px
+            font-weight: 400
+    .menu_open
+        margin-top: 20px
+        display: none
+
+.menu_mobile
+    position: absolute
+    top: 0
+    display: none
+    background-color: rgba(252, 174, 97, 0.95)
+    width: 100%
+    height: 100%
+    nav
+        position: absolute
+        top: 10%
+        left: 50%
+        transform: translateX(-50%)
+        ul
+            padding: 0
+            li
+                list-style-type: none
+                font-family: Poppins
+                font-weight: 700
+                font-size: 30px
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    display: block
+                    margin-bottom: 25px
+    &_close
+        animation: none
+        color: #ffffff
+        font-size: 30px
+        position: absolute
+        top: 10px
+        right: 20px
+        transform: rotate(45deg)

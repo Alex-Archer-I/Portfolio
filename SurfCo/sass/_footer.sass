@@ -1,0 +1,81 @@
+.footer
+    height: 420px
+    background-color: #000000
+    position: relative
+    &_textblock
+        position: absolute
+        display: flex
+        align-items: center
+        top: 252px
+        color: #4d4d4d
+        font-family: Raleway
+        font-size: 12px
+        font-weight: 400
+    &_dot
+        width: 5px
+        height: 5px
+        background-color: #4d4d4d
+        border-radius: 100%
+        margin: 0 10px
+    &_menu
+        position: absolute
+        right: 0
+        top: 47px
+        display: flex
+    &_col
+        margin-right: 66px
+        li
+            list-style: none
+            list-style-image: url('../icons/Wave_mini.png')
+            a
+                text-decoration: none
+                color: #ffffff
+                font-family: Raleway
+                font-size: 14px
+                font-weight: 400
+                line-height: 34px
+                transition: 0.5s all
+                &:hover
+                    color: $main-color
+
+    &_email
+        position: absolute
+        right: 0
+        top: 292px
+    &_text
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 400
+    &_subscribe
+        width: 300px
+        margin-top: 22px
+        padding-bottom: 10px
+        border-bottom: 1px solid #4d4d4d
+        color: #4d4d4d
+        display: flex
+        align-items: center
+        input
+            background: none
+            border: none
+            color: #4d4d4d
+            margin: 0 10px
+            width: 242px
+            font-family: Raleway
+            font-size: 14px
+            font-weight: 700
+    &_submit
+        width: 22px
+        height: 22px
+        background-color: $main-color
+        border: none
+        border-radius: 100%
+        color: #ffffff
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.5s all
+        &:hover
+            background-color: #ffffff
+            color: $main-color

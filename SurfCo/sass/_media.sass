@@ -1,0 +1,278 @@
+@media ( max-width:1200px)
+    .cont
+        width: 100%
+    
+    .header
+        .social_icons
+            flex-direction: column
+            padding-right: 20px
+            &_round
+                margin: 5px 0
+    
+    .board
+        &_main
+            top: -100px
+    
+    .about
+        &_mini_img
+            right: 0
+        &_shadowText
+            width: 100%
+    
+    .team
+        &_text
+            width: 100%
+        &_panel
+            width: 600px
+        .active_one
+            left: 50
+            z-index: 1
+        .active_two
+            left: 50
+            z-index: 0
+            opacity: 0
+        .active_three
+            left: 290px
+            z-index: 0
+            opacity: 0
+        .active_four
+            left: 290px
+            z-index: 1
+    
+    .social
+        height: 1110px
+        &_text
+            position: static
+        &_instagram
+            position: static
+            top: 0
+        &_facebook
+            right: 0
+            top: 700px
+            bottom: 0px
+
+    .footer
+        &_textblock
+            bottom: 30px
+            top: auto
+            left: 50%
+            transform: translateX(-50%)
+        &_menu
+            left: 50%
+            right: auto
+            transform: translateX(-50%)
+        &_email
+            left: 50%
+            right: auto
+            top: 250px
+            transform: translateX(-50%)
+
+@media ( max-width: 1030px )
+    .board
+        height: 1050px
+        &_shadowtext
+            top: 0
+            width: 83px
+            height: 600px
+        &_main
+            width: 100%
+            height: 1100px
+            flex-direction: column
+            justify-content: center
+        &_img
+            padding: 0
+            height: 526px
+            align-self: start
+            margin-left: 100px
+        &_mini
+            height: 76px
+            z-index: 2
+            position: absolute
+            right: 150px
+            top: 100px
+        &_descr
+            padding: 0
+    
+    .about
+        background: none
+        &_shadowText
+            top: 0
+        &_mini_img
+            top: 50px
+        &_blank
+            width: 100%
+        &_flexbox
+            right: 0
+    
+
+@media ( max-width:900px)
+    .header
+        .flexbox
+            flex-direction: column
+        &_logo
+            margin: 0
+        .social_icons
+            flex-direction: row
+            padding: 0
+            &_round
+                margin: 0 5px
+
+    .board
+        &_img
+            margin-left: 50px
+    
+    .update
+        &_box
+            display: block
+        &_post
+            width: 100%
+            height: 210px
+            flex-direction: row
+            justify-content: center
+            &_text
+                width: 250px
+                margin: 0 0 0 27px
+
+
+@media ( max-width:768px)
+    .header
+        h1
+            width: 500px
+            margin: 0 auto
+            padding-top: 126px
+
+    .board
+        &_img
+            margin-left: 0
+    
+    .team
+        &_member
+            opacity: 0
+        &_panel
+            width: calc(100% - 50px)
+        .active_one
+            left: 50%
+            transform: translateX(-50%)
+        .active_two
+            left: 50%
+            transform: translateX(-50%)
+        .active_three
+            left: 50%
+            transform: translateX(-50%)
+        .active_four
+            left: 50%
+            transform: translateX(-50%)
+        .hide_left
+            left: 50%
+            transform: translateX(-50%)
+        .hide_right
+            left: 50%
+            transform: translateX(-50%)
+        .mobile-show
+            display: flex
+            opacity: 1
+            left: 50%
+            transform: translateX(-50%)
+            transition: 1s all
+    
+    .social
+        &_facebook
+            top: 800px
+
+@media ( max-width:642px)
+    .board
+        &_main
+            height: 1100px
+        &_img
+            align-self: center
+        &_mini
+            position: static
+            flex-direction: row
+            width: 330px
+            margin-bottom: 20px
+        &_descr
+            .flex
+                margin-bottom: 34px
+
+@media ( max-width:576px)
+    .header
+        h1
+            width: 100%
+        .flexbox
+            align-items: center
+        &_nav
+            display: none
+        .social_icons
+            margin-top: 10px
+            &_round
+                margin: 0 5px
+        .mobile_menu_open
+            display: block
+    
+    .board
+        .corner
+            width: 100%
+    
+    .about
+        &_mini_img
+            width: calc( 100% - 20px )
+            padding: 10px
+    
+    .update
+        &_box
+            display: flex
+            flex-direction: column
+            width: 270px
+            margin: 0 auto
+        &_post
+            flex-direction: column
+            align-items: center
+            width: 270px
+            height: 344px
+            margin: 0
+            &_text
+                width: 210px
+                height: 88px
+                margin: 27px 0 0 0
+    
+    .social
+        &_text
+            width: 100%
+        &_instagram
+            width: 100%
+        &_facebook
+            width: 100%
+            position: static
+    
+    .footer
+        &_menu
+            display: flex
+            justify-content: space-between
+        &_col
+            margin: 0
+
+@media ( max-width:440px)
+    .board
+        &_img
+            width: 100%
+        &_big
+            width: 100%
+        &_mini
+            width: 100%
+        &_descr
+            width: calc(100% - 20px)
+            padding: 0 10px
+        &_line
+            width: 100%
+
+@media ( max-width:371px)
+    .about
+        height: 900px
+        &_flexbox
+            width: 100%
+            height: 400px
+        &_text
+            height: 550px
+    
+    .social
+        height: 720px

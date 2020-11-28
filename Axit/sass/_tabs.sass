@@ -1,0 +1,29 @@
+.tabs
+    height: 595px
+    background-color: #f5f5f5
+    .flex
+        height: 100%
+    &_main
+        width: 476px
+        display: flex
+        flex-direction: column
+    &_tab
+        width: 112px
+        height: 112px
+        background-color: #333333
+        border: none
+        display: block
+        margin-top: 2px
+        color: #ffffff
+        font-family: Open Sans
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+        transition: 1s all
+        cursor: pointer
+        &:hover
+            background-color: $orange-color
+        &_active
+            background-color: $orange-color
+    .text
+        margin-bottom: 20px

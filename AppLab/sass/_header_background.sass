@@ -1,0 +1,93 @@
+@keyframes shine
+    0%
+        opacity: 0
+    50%
+        opacity: 1.0
+    100%
+        opacity: 0
+
+@keyframes shineReverce
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+        
+
+.icon-plus
+    position: absolute
+    animation: shine 5s infinite
+    &_first
+        bottom: 270px
+        left: 20px
+        color: #d4cdfd
+        transform: rotate(25deg)
+    &_second
+        bottom: 30px
+        left: 520px
+        color: #6883de
+        animation-delay: 1s
+    &_third
+        bottom: 330px
+        right: 550px
+        color: #d4cdfd
+        transform: rotate(25deg)
+        font-size: 30px
+
+.menu_mobile_close
+    animation: none
+
+.icon-checkbox-unchecked
+    position: absolute
+    top: 250px
+    left: 350px
+    animation: shine 5s infinite
+    color: #d4cefd
+    transform: rotate(25deg)
+    animation-delay: 2s
+
+.icon-radio-unchecked
+    position: absolute
+    animation: shine 5s infinite
+    &_first
+        top: 170px
+        left: 100px
+        animation-delay: 3s
+        font-weight: 1000
+        font-size: 20px
+        color: #d4cdfd
+    &_second
+        top: 125px
+        right: 50px
+        font-weight: 1000
+        font-size: 30px
+        color: #fd9494
+    &_third
+        bottom: 100px
+        left: 200px
+        animation-delay: 1s
+        font-weight: 1000
+        font-size: 20px
+        color: #fa9e88
+    &_fourth
+        bottom: 100px
+        right: 150px
+        font-weight: 1000
+        font-size: 25px
+        color: #fd706d
+
+.city
+    position: absolute
+    bottom: 0
+    z-index: -2
+    &_left
+        position: absolute
+        bottom: 0
+        left: -244px
+        z-index: -2
+    &_right
+        position: absolute
+        bottom: 0
+        right: -156px
+        z-index: -2

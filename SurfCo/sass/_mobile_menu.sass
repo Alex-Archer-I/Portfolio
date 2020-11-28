@@ -1,0 +1,56 @@
+.mobile_menu
+    position: absolute
+    top: 0
+    z-index: 3
+    width: 50%
+    height: 370px
+    padding: 50px 0
+    background-color: $main-color
+    transition: 1s all
+
+    &_list
+        height: 370px
+        padding: 0
+        flex-direction: column
+        justify-content: space-between
+        text-align: center
+        a
+            border-bottom: 2px solid #ffffff
+
+    button
+        position: absolute
+        top: 20px
+        right: 20px
+        background: none
+        border: none
+    
+    &_open
+        position: absolute
+        top: 40px
+        left: 0px
+        width: 30px
+        height: 3px
+        margin-left: 10px 
+        background-color: #000000
+        display: none
+        &::after
+            content: ''
+            position: absolute
+            top: 10px
+            width: 30px
+            height: 3px
+            background-color: #000000
+        &::before
+            content: ''
+            position: absolute
+            top: -10px
+            width: 30px
+            height: 3px
+            background-color: #000000
+            
+
+    &_unactive
+        left: -100%
+
+    &_active
+        left: 0
