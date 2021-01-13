@@ -45,7 +45,7 @@
             </div>
             <h1>Ride every wave as if it's your last</h1>
             <h2>We love the motion of the ocean</h2>
-            <div class="mobile_menu_open"></div>
+            <div class="mobile_menu_open mobile_menu_toggle"></div>
             <div class="mobile_menu mobile_menu_unactive">
                 <nav>
                     <ul class="mobile_menu_list">
@@ -57,7 +57,7 @@
                         <li><a href="#" class="title title_menu">Dealers</a></li>
                     </ul>
                 </nav>
-                <button class="mobile_menu_close"><span class="icon-cross"></span></button>
+                <button class="mobile_menu_close mobile_menu_toggle"><span class="icon-cross"></span></button>
             </div>
         </div>
     </header>
@@ -74,10 +74,10 @@
                     <div class="board_big">Fourh Surf Image</div>
                 </div>
                 <div class="board_mini">
-                    <div class="board_box board_box_active"><img src="img/Surf_mini/Surf_mini_1.png" alt=""></div>
-                    <div class="board_box"><img src="img/Surf_mini/Surf_mini_2.png" alt=""></div>
-                    <div class="board_box"><img src="img/Surf_mini/Surf_mini_3.png" alt=""></div>
-                    <div class="board_box"><img src="img/Surf_mini/Surf_mini_4.png" alt=""></div>
+                    <img class="board_box board_box_active" src="img/Surf_mini/Surf_mini_1.png" alt="">
+                    <img class="board_box" src="img/Surf_mini/Surf_mini_2.png" alt="">
+                    <img class="board_box" src="img/Surf_mini/Surf_mini_3.png" alt="">
+                    <img class="board_box" src="img/Surf_mini/Surf_mini_4.png" alt="">
                 </div>
                 <div class="board_descr">
                     <div class="title title_big">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</div>
@@ -90,17 +90,17 @@
                         <div class="text">(52)</div>
                     </div>
                     <div>
-                        <button class="board_tab board_tab_active">Description</button>
-                        <button class="board_tab">Features</button>
-                        <button class="board_tab">Dimensions</button>
+                        <button data-id="description" class="board_tab board_tab_active">Description</button>
+                        <button data-id="features" class="board_tab">Features</button>
+                        <button data-id="dimensions" class="board_tab">Dimensions</button>
                     </div>
                     <div class="board_line"></div>
                     <div class="text board_text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</div>
                     <div class="flex">
                         <div class="board_price">$499.99</div>
-                        <button class="btn board_buy modal_show buy">Buy now</button>
+                        <button data-modal='buy' class="btn board_buy modal_show">Buy now</button>
                     </div>
-                    <a href="#" class="link modal_show all-boards">View all boards</a>
+                    <a data-modal='all-boards' href="#" class="link modal_show">View all boards</a>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                     <h3 class="title about_title">We are Surfers co.</h3>
                     <span class="icon-cross about_img"></span>
                     <div class="about_text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</div>
-                    <a href="#" class="link modal_show read">Read more</a>
+                    <a data-modal='read' href="#" class="link modal_show">Read more</a>
                 </div>
             </div>
             <div class="about_mini_img"></div>
@@ -149,7 +149,7 @@
                             <div class="text text_team">San Clemente, CA</div>
                         </div>
                     </div>
-                    <div class="team_member active_one up mobile-show">
+                    <div class="team_member active_1 up mobile-show">
                         <img src="img/Team_ava/Ava_1.png" alt="Taj Burrow" class="team_member_ava">
                         <div class="title title_team">Taj Burrow</div>
                         <div class="text text_team">@tajamos</div>
@@ -159,7 +159,7 @@
                             <div class="text text_team">Yallingup, Australia</div>
                         </div>
                     </div>
-                    <div class="team_member active_two down">
+                    <div class="team_member active_2 down">
                         <img src="img/Team_ava/Ava_2.png" alt="Malia Manuel" class="team_member_ava">
                         <div class="title title_team">Malia Manuel</div>
                         <div class="text text_team">@maliamanuel</div>
@@ -169,7 +169,7 @@
                             <div class="text text_team">Wailua, Hi</div>
                         </div>
                     </div>
-                    <div class="team_member active_three up">
+                    <div class="team_member active_3 up">
                         <img src="img/Team_ava/Ava_3.png" alt="Ian Walsh" class="team_member_ava">
                         <div class="title title_team">Ian Walsh</div>
                         <div class="text text_team">@ian.walsh</div>
@@ -179,7 +179,7 @@
                             <div class="text text_team">Maui, Hi</div>
                         </div>
                     </div>
-                    <div class="team_member active_four down">
+                    <div class="team_member active_4 down">
                         <img src="img/Team_ava/Ava_4.png" alt="Macy Callaghan" class="team_member_ava">
                         <div class="title title_team">Macy Callaghan</div>
                         <div class="text text_team">@macyjanecallaghan</div>
@@ -221,21 +221,8 @@
         <div class="container">
             <h3 class="title update_title">Latest Updates</h3>
             <span class="icon-cross update_icon"></span>
-            <div class="update_box">
-                <div class="update_post">
-                    <img src="img/Updates/update_1.jpg" alt="post img" class="update_post_img">
-                    <div class="update_post_text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</div>
-                </div>
-                <div class="update_post">
-                    <img src="img/Updates/update_2.png" alt="post img" class="update_post_img">
-                    <div class="update_post_text">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</div>
-                </div>
-                <div class="update_post">
-                    <img src="img/Updates/update_3.png" alt="post img" class="update_post_img">
-                    <div class="update_post_text">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</div>
-                </div>
-            </div>
-            <button class="btn btn_view update_btn modal_show all-posts">View all posts</button>
+            <div class="update_box"></div>
+            <button data-modal="all-posts" class="btn btn_view update_btn modal_show">View all posts</button>
         </div>
     </section>
 
@@ -281,15 +268,8 @@
         </div>
     </section>
 
-    <div class="overlay">
-        <div class="modal">
-            <div class="title modal_title"></div>
-            <div class="text modal_text"></div>
-            <button class="modal_close btn">Close</button>
-        </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <div class="overlay"></div>
+    
+    <script src="js/bundle.js"></script>
 </body>
 </html>
